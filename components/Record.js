@@ -10,9 +10,18 @@ export default class Record extends Component {
 
   render() {
     return (
-      <View style={{flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+      <View style={styles.record}>
         <Text>This is the new {this.props.title} View.</Text>
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  record: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+})

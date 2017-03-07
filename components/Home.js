@@ -10,9 +10,18 @@ export default class Home extends Component {
 
   render() {
     return (
-      <View style={{flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+      <View style={styles.home}>
         <Text>This is the {this.props.title} View.</Text>
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  home: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+})

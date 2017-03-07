@@ -10,9 +10,18 @@ export default class Profile extends Component {
 
   render() {
     return (
-      <View style={{flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+      <View style={styles.profile}>
         <Text>This is the new {this.props.title} View.</Text>
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  profile: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+})
